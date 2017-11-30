@@ -73,7 +73,7 @@ pass this sedes to :func:`rlp.decode`::
 For unicode strings, there's the sedes :mod:`rlp.sedes.text`, which uses UTF-8
 to convert to and from byte strings::
 
-    >>> from rlp.text import text
+    >>> from rlp.sedes.text import text
     >>> encode(u'Ðapp')
     '\x85\xc3\x90app'
     >>> decode('\x85\xc3\x90app', text)
